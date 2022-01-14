@@ -21,3 +21,41 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+---------------------------------------------------------------------------
+//App. js file 
+import React, {useState} from 'react'
+import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {useAuthState} from 'react-firebase-hooks/auth';
+import {auth, provider} from './firebaseSetup';
+
+
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import ForgetPass from './components/ForgetPass'
+import Home from "./components/Home";
+
+
+function App() {
+
+  return (
+        <Router>
+        <div>
+        <Switch>
+            <Route path="/" exact component={Login} />
+            <Route path="/signup" component={SignUp} />
+            <Route path="/home" component={Home} />
+            <Route path="/forgetpassword" component={Home} />
+        </Switch>
+      </div>
+  </Router>
+    );
+  }
+  
+  export default App;
+  ----------------------------------------------------------------------------
+  
+  
+
+
