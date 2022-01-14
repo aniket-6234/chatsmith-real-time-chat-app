@@ -1,38 +1,500 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar{
+  height: 70px;
+  background-color: #215FF6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chatsmit-head {
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-family: 'Space Mono', monospace;
 }
+
+.main-box{
+  background-color: #151419;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  width: 620px;
+  height: 655px;
+  display: block;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.sign-head{
+    font-size: 1.85em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    /* text-transform: uppercase; */
+    color: #1557ff;
+    font-family: 'Alata', sans-serif;
+    font-weight: 600;
+}
+
+.new-sign-up{
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.new, .signup{
+  font-family: 'Roboto',sans-serif ,monospace;
+  font-size:0.90em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.signup{
+  margin-left: 20px;
+  cursor: pointer;
+  color: #215FF6;
+  font-weight: bold;
+  text-decoration: none;
+}
+.signup:hover{
+  color: whitesmoke;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.bolck-box{
+  display: block;
+}
+
+.btn-google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+  border: none;
+  color: #000000;
+}
+.google-logo{
+  width: 16px;
+  height: 16px;
+}
+.text-google{
+  font-family: 'Roboto',sans-serif, monospace;
+  font-size: 0.85em;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  margin-left: 18px;
+  color: #000000;
+ 
+}
+
+.btn-google:hover, .text-google:hover{
+  background-color: #212121;
+  color: #fff;
+}
+
+
+
+.input{
+  display: block;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.input h2, .password{
+  font-family: 'Roboto',sans-serif, monospace;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.input-email, .password-toggle-box{
+  width: 380px;
+  height: 40px;
+  border: 1px solid;
+  border: 1px solid white;
+  outline: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-family: 'Roboto',sans-serif, monospace;
+  letter-spacing:1.7px;
+  background-color: transparent;
+}
+
+.password{
+  margin-top: 30px;
+}
+
+.password-toggle-box{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-left: 0px;
+}
+
+.input-password{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 310px;
+  font-family: 'Roboto',sans-serif, monospace;
+  letter-spacing:1.7px;
+  background-color: transparent;
+}
+
+.password-signup, .email-address-signup{
+  margin-top: 25px;
+}
+
+.btn-login{
+  width: 380px;
+  height: 40px;
+  margin-top: 50px;
+  background-color: #215FF6;
+  border: none;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.btn-login:hover{
+  transition: transform 0.5s ease;
+  background-color: #02cc89e8;  
+}
+
+.forget-pass, .footer h3, .footer-signup h3{
+  margin-top: 30px;
+  font-family: 'Roboto',sans-serif, monospace;
+  letter-spacing:1px;
+  font-size: 0.89em;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.forget-pass{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer, .footer-signup{
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 35px;
+  /* background-color: yellow; */
+}
+
+.footer-signup {
+  height: 185px;
+}
+
+
+.footer h3, .footer-signup h3{
+  margin-top: 1px;
+  color: white;
+  font-size: 0.80em;
+}
+.sendmsg-section{
+  display: flex;
+  justify-content: center;
+}
+
+.send-box{
+  bottom: 0px;
+  position: fixed;
+  width: 600px;
+  height: 80px;
+  background-color: rgb(231, 228, 228);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.input-send{
+  border: none;
+  outline: none;
+  color: black;
+  width: 400px;
+  height: 40px;
+  padding-left: 20px;
+  font-family: 'Sen', sans-serif;
+  background-color: transparent;
+}
+.input-child{
+  display: block;
+}
+.msg-line{
+  width: 380px;
+  height: 0.5px;
+  background-color: black;
+  margin-left: 20px;
+}
+
+.btn-send{
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  background-color: #000;
+  font-family: 'Sen', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+}
+.btn-send:hover{
+  background-color: #215FF6;
+  transition: 0.2s ease;
+}
+.text-msg-box{
+  width: 600px;
+  height: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.head-welcome-text{
+  width: 80%;
+  text-align: center;
+  /* background-color: rosybrown; */
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+}
+.head-welcome-text p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: black;
+}
+.bold{
+  color: #215FF6;
+}
+.show-text-msg{
+  height: 500px;
+  width: 95%;
+  /* background-color: rgb(137, 225, 247); */
+  margin-top: 20px;
+  overflow-y: auto;
+}
+.show-text-msg::-webkit-scrollbar {
+  display: none;
+}
+
+.text-box{
+  /* width: 50%; */
+  /* min-height: 40px;
+  max-height: 60px; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  /* background-color: rgb(0, 255, 136); */
+}
+
+.text-box-1{
+  /* width: 50%; */
+  /* min-height: 40px;
+  max-height: 60px; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* background-color: rgb(0, 255, 136); */
+}
+
+.profile-box, .profile-box-top{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  /* background-color: black; */
+}
+
+
+.profile-box-top{
+  margin-top: 5px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.content-box{
+  margin-left: 12px;
+  width: 230px;
+  min-height: 55px;
+  max-height: 100px;
+  border-radius: 10px;
+  background-color: #215FF6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-box-1{
+  margin-right: 12px;
+  width: 230px;
+  min-height: 55px;
+  max-height: 100px;
+  border-radius: 10px;
+  background-color: #215FF6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-name{
+   font-size: 10px;
+   font-family: 'Inter',sans-serif;
+   margin-left: 10px;
+   letter-spacing: 0.2px;
+}
+
+.text{
+  font-family: 'Sen',sans-serif;
+  font-size: 12.5px;
+  margin-left: 10px;
+}
+.time{
+  display: flex;
+  justify-content: flex-end;
+  font-size:9px;
+  float:right;
+  font-family: 'Inter',sans-serif;
+  margin-right: 15px;
+  letter-spacing: 0.5px;
+}
+
+#github-link{
+  font-size: 14px;
+  font-family: 'Sen', sans-serif;
+  cursor: pointer;
+  letter-spacing: 1;
+  font-weight: normal;
+}
+#github-link:hover{
+  color: #15ffa5;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .nav-bar{
+    height: 50px;
+  }
+  .chatsmit-head {
+    font-size: 0.95em;
+  }
+  .sign-head{
+    font-size: 1.4em;
+  }
+  .new, .signup{
+    font-size:0.85em;
+    letter-spacing:0.5px;
+  }
+
+  .footer, .footer-signup{
+    background-color: #000;
+  }
+  .footer h3, .footer-signup h3{
+    font-size: 0.80em;
+  }
+  .btn-google{
+    height: 42px;
+  }
+ 
+  .btn-login{
+    height: 45px;
+  }
+  .main-box{
+    height: 90vh;
+  }
+  .send-box{
+    width: 100vw;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-send{
+     width: 250px;
+     background-color: transparent;
+     padding-left:15px;
+  }
+  .msg-line{
+    width: 225px;
+    margin-left: 15px;
+    height: 0.5px;
+    margin-top: -5px;
+  }
+  .btn-send{
+    width: 75px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .profile-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    /* background-color: black; */
+  }
+
+ .profile-box-top{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    /* background-color: black; */
+  }
+  .content-box{
+    width: 180px;
+    min-height: 48px;
+    max-height: 80px;
+    background-color: black;
+  }
+  .content-box-1{
+    width: 180px;
+    min-height: 48px;
+    max-height: 80px;
+    background-color: #215FF6;
+  }
+
+  .send-box{
+    background-color: rgb(219, 218, 218);
+    height: 60px;
+  }
+
+}
+
+
+
+
+
