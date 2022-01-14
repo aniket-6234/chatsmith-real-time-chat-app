@@ -1,0 +1,307 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar-forget{
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatsmit-head-forget {
+  font-size: 1.5em;
+  color: #215FF6;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-family: 'Space Mono', monospace;
+}
+
+.main-box-forget{
+  height: 100vh;
+  background-color: #215FF6;
+  display: flex;
+  justify-content: center;
+}
+
+.container-forget{
+  margin-top: 100px;
+  width: 620px;
+  height: 450px;
+  display: block;
+}
+.forget-forget, .pass-pass{
+  font-family: 'Alata', sans-serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+}
+
+.forget-box{
+  display: block;
+  justify-content: center;
+  margin-top: 80px;
+
+}
+
+.forget-box h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing:1.5px;
+}
+
+.input-forget{
+  width: 620px; 
+  height: 40px;
+  outline: none;
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+.forget-underline{
+  width: 620px;
+  height: 0.5px;
+  margin-top:3px;
+  background-color: white;
+}
+
+.button-forget{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.btn-send-forget{
+  width: 270px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #215FF6;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(46, 46, 46, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+
+.btn-send-forget:hover {
+  background-color: whitesmoke;
+  box-shadow: 0px 10px 10px #215FF6;
+  color: black;
+  transform: translateY(-5px);
+  border: 1px dashed black;
+}
+
+.main-nav{
+   height: 90px;
+   background-color: #215FF6;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.main-nav header{
+  margin-left: 150px;
+}
+.home-header{
+  font-family: 'Space Mono', monospace;
+  font-weight : lighter;
+}
+
+.top-container{
+  width: 250px;
+  height: 50px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon, .icon-modal{
+  width: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.icon-modal{
+  margin-top: 15px;
+}
+
+.box-modal{
+  border: 1px solid black;
+  width: 350px;
+  height: 350px;
+  float: right;
+  outline: none;
+  margin-top: 90px;
+  margin-right: 250px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.box-top{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box-top h2{
+  font-family: 'Sen', sans-serif;
+  margin-left: 25px;
+  font-size: 1.3em;
+  color: #000;
+}
+.box-bottom-line{
+  height:0.5px;
+  width: 84%;
+  background-color: black;
+  margin-top: -15px;
+}
+.eye{
+  width: 240px;
+}
+.box-bottom{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.box-bottom h3{
+  font-family: 'Sen', sans-serif;
+  font-weight: normal;
+  color: black;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+.error-msg, .success-msg{
+  width: 380px;
+  height: 35px;
+  background-color: rgb(248, 65, 80);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-msg p, .success-msg p{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+.success-msg {
+  background-color: rgb(8, 190, 130);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .nav-bar-forget{
+    height:50px;
+  }
+
+  .chatsmit-head-forget{
+    font-size: 0.95em;
+  }
+
+  .container-forget{
+    margin-top: 60px;
+    margin-left: 8px;
+  }
+
+
+  .forget-forget, .pass-pass{
+    font-size: 26px;
+  }
+  
+  .forget-box h2{
+    font-size: 14px; 
+  }
+
+  .input-forget, .forget-underline {
+    width: 438px;
+    font-size: 24px;
+    margin-top: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .forget-underline {
+    margin-top: 3px;
+    width: 0.4px;
+  }
+
+  .btn-send-forget{
+    width: 230px;
+    height: 47px;
+  }
+  .main-nav{
+    height: 70px;
+  }
+  .main-nav header{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  .top-container{
+    margin-right: 30px;
+    width: 130px;
+  }
+  .icon{
+    width: 18px;
+  }
+  .box-modal{
+      height: 400px;
+      width: 300px;
+      margin-top: 70px;
+      margin-right: 10px;
+  }
+  .eye{
+    margin-top: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+  .container-forget{
+    margin-left: 15px;
+  }
+
+  .input-forget, .forget-underline {
+    width: 370px;
+    font-size: 24px;
+  }
+
+  .btn-send-forget{
+    width: 200px;
+    height: 44px;
+  }
+  
+}
